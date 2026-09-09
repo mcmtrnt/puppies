@@ -3,6 +3,7 @@
     --secondary-color: #D2B48C;
     --text-color: #333;
     --light-bg: #F5F5F5;
+    --form-border: #5a5045;
 }
 
 body {
@@ -128,12 +129,21 @@ h1, h2, h3, .navbar-brand {
 }
 
 .form-control {
-    border: 1px solid #ddd;
+    border: 1px solid var(--form-border);
     padding: 0.8rem;
     margin-bottom: 1rem;
 }
 
 .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.form-check-input {
+    border: 1.5px solid var(--form-border);
+}
+
+.form-check-input:focus {
     border-color: var(--primary-color);
     box-shadow: none;
 }
